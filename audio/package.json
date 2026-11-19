@@ -1,0 +1,14 @@
+{
+  "name": "claims-audio-insight",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "保险理赔录音智能分析平台",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

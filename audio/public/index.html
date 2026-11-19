@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>理析 · 理赔录音智能分析平台</title>
+    <meta name="description" content="面向保险理赔的录音智能分析平台：批量转写、案件归类、综合分析报告与案件 AI 问答" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css?v=7" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#/">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3.2 19 6v5.4c0 4.2-2.9 7.6-7 9.4-4.1-1.8-7-5.2-7-9.4V6l7-2.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M8.7 11.8v3.1M11.9 9.6v5.3M15.1 11.1v3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>理析</strong>
+            <small>理赔录音智能分析</small>
+          </span>
+        </a>
+        <nav id="nav" class="nav"></nav>
+        <div class="sidebar-foot">
+          <div id="ai-status" class="ai-status"></div>
+          <div class="sidebar-version">v1.0 · 内部使用</div>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button id="back-btn" class="btn btn-ghost btn-icon" title="返回首页" aria-label="返回首页" hidden>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="tb-main">
+              <div id="crumb" class="crumb"></div>
+              <h1 id="page-title">录音分析工作台</h1>
+            </div>
+          </div>
+          <div class="topbar-right" id="topbar-actions"></div>
+        </header>
+        <main id="view" class="view"></main>
+      </div>
+    </div>
+    <div id="toast-root" class="toast-root"></div>
+    <div id="modal-root"></div>
+    <script type="module" src="/js/app.js?v=7"></script>
+  </body>
+</html>
